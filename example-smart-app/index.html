@@ -72,33 +72,111 @@
 	<form class="form-horizontal">
 <fieldset>
 
-<!-- Form Name -->
-<legend>Form Name</legend>
+<fieldset>
 
-<!-- Password input-->
+<!-- Form Name -->
+<legend>Patient Condition</legend>
+
+<!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="passwordinput">Password Input</label>
+  <label class="col-md-4 control-label" for="textinput">How Many trips requested?</label>  
   <div class="col-md-4">
-    <input id="passwordinput" name="passwordinput" type="password" placeholder="placeholder" class="form-control input-md">
-    <span class="help-block">help</span>
+  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+  <span class="help-block">help</span>  
   </div>
 </div>
 
-<!-- Search input-->
+<!-- Multiple Checkboxes (inline) -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="searchinput">Search Input</label>
+  <label class="col-md-4 control-label" for="checkboxes">Is the current PCS within 60 days of the requested start date?</label>
   <div class="col-md-4">
-    <input id="searchinput" name="searchinput" type="search" placeholder="placeholder" class="form-control input-md">
-    <p class="help-block">help</p>
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Y">
+      Y
+    </label>
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="N">
+      N
+    </label>
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+  <label class="col-md-4 control-label" for="textinput">Requested start date of service </label>  
   <div class="col-md-4">
   <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  <span class="help-block">help</span>  
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Is the date on the PCS within 60 days prior to the requested date of service ?</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Unable to get up from bed without assistance</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Y
+    </label>
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      N
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Is Patient Confined to Bed ?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      NO
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Unable to go safely by wheelchair van or car </label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Physical
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      Cognitive
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Submit to Payer</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
   </div>
 </div>
 
