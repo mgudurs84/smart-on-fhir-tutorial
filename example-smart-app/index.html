@@ -725,8 +725,8 @@ page navigation / page break / action bar styles
 
 </div>
 
-<div class="container jf-thankyou" style="display:none;" data-redirect="" data-seconds="10">
-  <h3>Your form has been submitted to the payer. Thank You!</h3>
+<div class="container jf-thankyou" style="display:none;">
+  <h3>Prior Auth record was successfully submitted to Novitas MAC .Prior Auth is approved with prior auth UTN number #45xfdvtc4678</h3>
 </div>
 <!-- ----------------------------------------------- -->
 
@@ -820,7 +820,7 @@ $('.jf-form input[type="checkbox"], .jf-form input[type="radio"]').each( functio
 <script>
 $(document).ready(function(){
   $(".custom-btn").click(function(){
-    alert("Patient Record submitted to payer : Prior Auth record is approved . Reference UTN number :43xf656xfsf");
+     $(".jf-thankyou").show(1000);
   });
 });
 </script>
