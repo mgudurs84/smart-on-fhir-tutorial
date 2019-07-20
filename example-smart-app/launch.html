@@ -26,10 +26,17 @@
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script>
       FHIR.oauth2.authorize({
-        'client_id': '67dbd607-e340-42b3-a5cb-efea390786ed',
+        'client_id': '0f531609-ecfd-4ee7-9d7a-8cdc81292307',
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
       });
     </script>
+    <!-- this is for aws flb account -->
+     <!--script>
+      FHIR.oauth2.authorize({
+        'client_id': '67dbd607-e340-42b3-a5cb-efea390786ed',
+        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+      });
+    </script-->
     <div class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
