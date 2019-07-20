@@ -696,8 +696,11 @@ page navigation / page break / action bar styles
     </div>
   </div>
 
-  <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+  <!--button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
   		Submit
+  </button-->
+   <button type="submit" class="btn btn-primary btn-lg custom-btn" style="z-index: 1;">
+  		Submit to payer
   </button>
 
 </div>
@@ -709,10 +712,10 @@ page navigation / page break / action bar styles
 </div>
 <div class="clearfix"></div>
 
-<div class="submit">
+<!--div class="submit">
   <p class="error bg-warning" style="display:none;">
     Please check the required fields.  </p>
-</div>
+</div-->
 
 <div class="clearfix"></div>
 
@@ -813,6 +816,13 @@ $('.jf-form input[type="checkbox"], .jf-form input[type="radio"]').each( functio
 	// --------------------------------
 	JF.init( '#' + $('.jf-form > form:first-child').attr('id') );
 
+</script>
+<script>
+$(document).ready(function(){
+  $(".custom-btn").click(function(){
+    alert("Patient Record submitted to payer : Prior Auth record is approved . Reference UTN number :43xf656xfsf");
+  });
+});
 </script>
 
   </body>
