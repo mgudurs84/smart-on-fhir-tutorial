@@ -207,7 +207,7 @@
     <script>
 	    $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("https://www.w3schools.com/jquery/demo_ajax_json.js", function(result){
+    $.getJSON("https://reqres.in/api/users/2", function(result){
       $.each(result, function(i, field){
         $("div").append(field + " ");
       });
