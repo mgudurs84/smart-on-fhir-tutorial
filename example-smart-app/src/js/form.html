@@ -16,6 +16,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  <link href='https://clinicaltables.nlm.nih.gov/autocomplete-lhc-versions/17.0.2/autocomplete-lhc.min.css' rel="stylesheet">
+ <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+ <script src='https://clinicaltables.nlm.nih.gov/autocomplete-lhc-versions/17.0.2/autocomplete-lhc.min.js'></script>
   
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -323,6 +326,7 @@ page navigation / page break / action bar styles
 
 
 <div class="form-group f4 required" data-fid="f4">
+<input type="text" id="condition" placeholder="Condition">
   <label class="control-label" for="f4">Requested Date of Service</label>
 
 <div class="input-group date">
@@ -812,6 +816,10 @@ $('.jf-form input[type="checkbox"], .jf-form input[type="radio"]').each( functio
 	JF.init( '#' + $('.jf-form > form:first-child').attr('id') );
 
 </script>
+<script>
+new Def.Autocompleter.Search('condition',
+ 'https://clinicaltables.nlm.nih.gov/api/conditions/v3/search');
+	</script>
 
   </body>
 </html>
