@@ -1,6 +1,7 @@
 (function(window){
   window.extractData = function() {
     var ret = $.Deferred();
+    console.log(ret);
 
     function onError() {
       console.log('Loading error', arguments);
